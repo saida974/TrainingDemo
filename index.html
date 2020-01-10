@@ -1,0 +1,27 @@
+</head>
+<body>
+	<ul>
+		<li class="actif"><a href="#">Ajouter un produit</a></li>
+		<li><a href="View/Modifier.php">Modifier un produit</a></li>
+		<li><a href="View/Supprimer.php">Supprimer un produit</a></li>
+		<li><a href="View/liste.php">Liste des produits</a></li>
+	</ul>
+<center><h1>Ajouter des produits</h1>
+<form action="Controller/ajouterp.php" method="POST">
+	<table>
+		<tr><td><label>Nom de produit :</label></td><td><input type="text" name="nomp" required /></td></tr>
+		<tr><td><label>Categorie de produit :</label></td><td><select name="catp">
+			<option>Visage</option>
+			<option>Corps</option>
+			<option>Main</option>
+			<option>Pied</option>
+			<option>Cheveux</option>
+		</select></td></tr>
+        <tr><td><label>Prix de produit :</label></td><td><input type="text" name="prixp" required /></td></tr>
+        <tr><td><label>Date d'ajout de produit :</label></td><td><input type="date" name="datep" required /></td></tr>
+    </table>
+    <center><input type="submit" name="ajouter" value="Ajouter"></center>
+</form></center>
+
+</body>
+</html>
